@@ -1,0 +1,14 @@
+{
+  "name": "demo-03",
+  "version": "1.0.0",
+  "description": "- 单页应用\r - 单页应用+第三方依赖\r - 多页应用+第三方依赖+webpack生成代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
+}
