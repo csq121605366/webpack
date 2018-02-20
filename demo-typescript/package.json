@@ -1,0 +1,22 @@
+{
+  "name": "demo-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
+    "lodash": "^4.17.5",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.104",
+    "lodash": "^4.17.5",
+    "lodash-es": "^4.17.5"
+  }
+}
