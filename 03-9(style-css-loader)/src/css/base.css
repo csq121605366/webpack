@@ -1,0 +1,10 @@
+.box {
+    composes: bigBox from './common.css';
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    transition: all 1s linear;
+}
+.box:hover{
+    transform: rotateZ(360deg);
+}

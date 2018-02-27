@@ -1,0 +1,39 @@
+html {
+  background: #383454;
+}
+h1 {
+    color: green;
+}
+
+.src-css-common__bigBox--27sNb {
+    border: 6px solid #000;
+}
+
+:root {
+    --mainColor: red;
+}
+
+a {
+    color: var(--mainColor);
+}.src-css-base__box--REzyU {
+  height: 200px;
+  width: 200px;
+  background-color: #333;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.src-css-base__box--REzyU:hover {
+  -webkit-transform: rotateZ(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotateZ(360deg);
+}
+h1 {
+  color: green;
+}
+.src-css-common__bigBox--27sNb {
+  border: 6px solid #000;
+}
+a {
+  color: red;
+}

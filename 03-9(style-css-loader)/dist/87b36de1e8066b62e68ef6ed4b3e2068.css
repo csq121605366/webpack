@@ -1,0 +1,43 @@
+var refs = 0;
+var dispose;
+var content = require("!!../../node_modules/_css-loader@0.28.9@css-loader/index.js!./test.useable.css");
+
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) exports.locals = content.locals;
+
+exports.use = exports.ref = function() {
+	if(!(refs++)) {
+		dispose = require("!../../node_modules/_style-loader@0.20.2@style-loader/lib/addStyles.js")(content, {"hmr":true});
+	}
+
+	return exports;
+};
+
+exports.unuse = exports.unref = function() {
+  if(refs > 0 && !(--refs)) {
+	   dispose();
+		 dispose = null;
+  }
+};
+if(module.hot) {
+	var lastRefs = module.hot.data && module.hot.data.refs || 0;
+
+	if(lastRefs) {
+		exports.ref();
+		if(!content.locals) {
+			refs = lastRefs;
+		}
+	}
+
+	if(!content.locals) {
+		module.hot.accept();
+	}
+
+	module.hot.dispose(function(data) {
+		data.refs = content.locals ? 0 : refs;
+
+		if(dispose) {
+			dispose();
+		}
+	});
+}

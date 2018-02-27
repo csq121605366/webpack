@@ -1,0 +1,53 @@
+@homecolor: #ff3333;
+html {
+    background-color: @homecolor;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+.bigBox {
+    height: 400px;
+    width: 400px;
+    border: 4px solid red;
+    background-color: violet;
+    >div {
+        height: 60px;
+        width: 60px;
+        float: left;
+    }
+    .ani1 {
+        background: url('../assets/images/1@2x.jpg') no-repeat;
+        background-size: contain;
+    }
+    .ani2 {
+        background: url('../assets/images/2@2x.jpg') no-repeat;
+        background-size: contain;
+    }
+    .ani3 {
+        background: url('../assets/images/3.jpg') no-repeat;
+        background-size: contain;
+    }
+    .ani4 {
+        background: url('../assets/images/4.jpg') no-repeat;
+        background-size: contain;
+    }
+}
+
+.smallBox {
+    height: 400px;
+    width: 400px;
+    border: 4px solid red;
+    background-color: violet;
+}
+
+.littleBox {
+    height: 400px;
+    width: 400px;
+    border: 4px solid red;
+    background-color: violet;
+}

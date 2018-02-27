@@ -1,0 +1,15 @@
+h1 {
+    color: green;
+}
+
+.bigBox {
+    border: 6px solid #000;
+}
+
+:root {
+    --mainColor: red;
+}
+
+a {
+    color: var(--mainColor);
+}
